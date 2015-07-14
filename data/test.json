@@ -1,9 +1,11 @@
-{ "people": [
-
-{ "firstName": "Brett", "lastName":"McLaughlin", "email": "aaaa" },
-
-{ "firstName": "Jason", "lastName":"Hunter", "email": "bbbb"},
-
-{ "firstName": "Elliotte", "lastName":"Harold", "email": "cccc" }
-
+{"freetrial":[{
+"id": "01",
+"imgurl": "images/1.jpg",
+"status": "0"
+},
+{
+"id": "02",
+"imgurl": "images/2.jpg",
+"status": "1"
+}
 ]}
