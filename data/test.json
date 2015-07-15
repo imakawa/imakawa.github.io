@@ -1,11 +1,16 @@
-{"freetrial":[{
-"id": "01",
-"imgurl": "images/1.jpg",
-"status": "0"
-},
 {
-"id": "02",
-"imgurl": "images/2.jpg",
-"status": "1"
+    "employees": [
+        {
+            "firstName": "John",
+            "lastName": "Doe"
+        },
+        {
+            "firstName": "Anna",
+            "lastName": "Smith"
+        },
+        {
+            "firstName": "Peter",
+            "lastName": "Jones"
+        }
+    ]
 }
-]}
