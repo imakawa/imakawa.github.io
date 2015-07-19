@@ -24,11 +24,18 @@ blogApp.config(['$routeProvider',
             });
     }]);
 
-
+    /*var menuInfo = function(http){
+      http.get("data/menu.json").then(function(data) {
+        return data.data
+      };
+    }
+*/
     var blogCtrls = angular.module('blogCtrls', []);
     blogCtrls.controller('homeCtrl', function($scope,$http,$location,$window) {
       //the ctrl for home page
-
+      GetData.menuInfo($http,function(data){
+        $scope.testdata = data.mainmenu[0].id;
+      });
     });
     blogCtrls.controller('articleListCtrl', function($scope,$http,$location,$window) {
       //the ctrl for articleList page
