@@ -37,9 +37,9 @@ blogApp.config(['$routeProvider',
         $scope.testdata = data.mainmenu[0].id;
       });
     });
-    blogCtrls.controller('articleListCtrl', function($scope,$http,$location,$window) {
+    blogCtrls.controller('articleListCtrl', function($scope,$http,$location,$window,$routeParams) {
       //the ctrl for articleList page
-
+      $scope.menuId = $routeParams.menuId;
     });
     blogCtrls.controller('articleCtrl', function($scope,$http,$location,$window) {
 
