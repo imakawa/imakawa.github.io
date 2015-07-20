@@ -8,17 +8,17 @@
     ],
 
   "submenu":[
-    {"id": "1001","mainmenuid":"100","visible":"1","position": "0","req":"0","text":"AngularJS"},
-    {"id": "1002","mainmenuid":"100","visible":"1","position": "0","req":"1","text":"Backbone.js"},
-    {"id": "1003","mainmenuid":"100","visible":"1","position": "0","req":"2","text":"KnockoutJS"},
-    {"id": "1004","mainmenuid":"100","visible":"1","position": "1","req":"0","text":"Node.js"},
-    {"id": "1005","mainmenuid":"100","visible":"1","position": "2","req":"0","text":"Marooon.js"},
-    {"id": "1010","mainmenuid":"101","visible":"1","position": "0","req":"0","text":"MongoDB"},
-    {"id": "1011","mainmenuid":"101","visible":"1","position": "0","req":"1","text":"SQLite"},
-    {"id": "1012","mainmenuid":"101","visible":"1","position": "1","req":"0","text":"Microsoft SQL Server"},
-    {"id": "1013","mainmenuid":"101","visible":"1","position": "1","req":"1","text":"MySQL"},
-    {"id": "1014","mainmenuid":"101","visible":"1","position": "1","req":"2","text":"Oracle Database"},
-    {"id": "1020","mainmenuid":"102","visible":"1","position": "0","req":"0","text":"日本語"},
-    {"id": "1021","mainmenuid":"102","visible":"1","position": "0","req":"1","text":"English"}
+    {"id": "1001","mainmenuid":"100","visible":"1","position": "0","req":"00","text":"AngularJS"},
+    {"id": "1002","mainmenuid":"100","visible":"1","position": "0","req":"01","text":"Backbone.js"},
+    {"id": "1003","mainmenuid":"100","visible":"1","position": "0","req":"02","text":"KnockoutJS"},
+    {"id": "1004","mainmenuid":"100","visible":"1","position": "1","req":"10","text":"Node.js"},
+    {"id": "1005","mainmenuid":"100","visible":"1","position": "2","req":"20","text":"Marooon.js"},
+    {"id": "1010","mainmenuid":"101","visible":"1","position": "0","req":"00","text":"MongoDB"},
+    {"id": "1011","mainmenuid":"101","visible":"1","position": "0","req":"01","text":"SQLite"},
+    {"id": "1012","mainmenuid":"101","visible":"1","position": "1","req":"10","text":"Microsoft SQL Server"},
+    {"id": "1013","mainmenuid":"101","visible":"1","position": "1","req":"11","text":"MySQL"},
+    {"id": "1014","mainmenuid":"101","visible":"1","position": "1","req":"12","text":"Oracle Database"},
+    {"id": "1020","mainmenuid":"102","visible":"1","position": "0","req":"00","text":"日本語"},
+    {"id": "1021","mainmenuid":"102","visible":"1","position": "0","req":"01","text":"English"}
   ]
 }
