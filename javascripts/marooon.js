@@ -1,7 +1,7 @@
-var GetData = (function(){
+var Data = (function(){
   return {
-    menuInfo:function(arg_http,fn){
-      arg_http({method:'GET',url:'data/menu.json'}).
+    GetJson:function(arg_http,path,fn){
+      arg_http({method:'GET',url:path}).
       success(function(data,status,headers,config){
         fn(data);
       }).

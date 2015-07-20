@@ -1,4 +1,6 @@
 <div>
   <header></header>
-  <div>{{menuId}}</div>
+  <div ng-repeat="article in articleInfo">
+    <a href="#/article/{{article.id}}">{{article.title}}</a>
+  </div>
 </div>

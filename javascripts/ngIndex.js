@@ -33,24 +33,29 @@ blogApp.config(['$routeProvider',
     var blogCtrls = angular.module('blogCtrls', []);
     blogCtrls.controller('homeCtrl', function($scope,$http,$location,$window) {
       //the ctrl for home page
-      GetData.menuInfo($http,function(data){
+      Data.GetJson($http,'data/menu.json',function(data){
         $scope.menuInfo = data;
       });
     });
     blogCtrls.controller('articleListCtrl', function($scope,$http,$location,$window,$routeParams) {
       //the ctrl for articleList page
-      $scope.menuId = $routeParams.menuId;
-      GetData.menuInfo($http,function(data){
+      Data.GetJson($http,'data/menu.json',function(data){
         $scope.menuInfo = data;
+      });
+
+      //選択したサブメニュー
+      $scope.menuId = $routeParams.menuId;
+      Data.GetJson($http,'data/article.json',function(data){
+        $scope.articleInfo = data.articles;
       });
     });
     blogCtrls.controller('articleCtrl', function($scope,$http,$location,$window) {
-      GetData.menuInfo($http,function(data){
+      Data.GetJson($http,'data/menu.json',function(data){
         $scope.menuInfo = data;
       });
     });
     blogCtrls.controller('aboutCtrl', function($scope,$http,$location,$window) {
-      GetData.menuInfo($http,function(data){
+      Data.GetJson($http,'data/menu.json',function(data){
         $scope.menuInfo = data;
       });
     });
