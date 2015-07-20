@@ -1,53 +1,40 @@
-<nav class="navbar navbar-default">
-<div class="container-fluid">
-<div class="navbar-header">
-  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-    <span class="sr-only">Toggle navigation</span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <a class="navbar-brand" href="#/home">{imakawa:bretwang}</a>
-</div>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#/home">{imakawa:p-wang}</a>
+  </div>
 
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  <ul class="nav navbar-nav">
-    <li class="dropdown">
-      <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Javascript<span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="#/articleList/angular">Angular</a></li>
-        <li><a href="">Backbone</a></li>
-        <li><a href="">Knockout</a></li>
-        <li class="divider"></li>
-        <li><a href="">NodeJS</a></li>
-        <li class="divider"></li>
-        <li><a href="">marooon.js</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Database<span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="">Sqlite</a></li>
-        <li><a href="">MongoDB</a></li>
-        <li class="divider"></li>
-        <li><a href="">Sqlserver</a></li>
-        <li><a href="">Mysql</a></li>
-        <li><a href="">Oracle</a></li>
-      </ul>
-    </li>
-    <li class="dropdown">
-      <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">LanguageStudy<span class="caret"></span></a>
-      <ul class="dropdown-menu" role="menu">
-        <li><a href="">日本語</a></li>
-        <li><a href="">English</a></li>
-      </ul>
-    </li>
-      <!--<li class="active"><a href="#">Database<span class="sr-only">(current)</span></a></li>-->
-  </ul>
-  <ul class="nav navbar-nav navbar-right">
-    <li><a target="_blank" href="http://github.com/imakawa">GitHub</a></li>
-    <li><a href="http://github.com/imakawa">About</a></li>
-  </ul>
-</div>
-</div>
-</nav>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li ng-repeat="menu in menuInfo.mainmenu | filter:{position:'left'} | orderBy: 'req'">
+        <a ng-if="menu.type=='link'" href="#/articleList/{{menu.id}}">{{menu.text}}</a>
+
+        <a ng-if="menu.type=='dropdown'" href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{menu.text}}<span class="caret"></span></a>
+        <ul ng-if="menu.type=='dropdown'" class="dropdown-menu" role="menu">
+          <li ng-repeat="submenu in menuInfo.submenu | filter:{mainmenuid:menu.id,position:'0'}| orderBy: 'req'">
+            <a href="#/articleList/{{submenu.id}}">{{submenu.text}}</a>
+          </li>
+          <li class="divider"></li>
+          <li ng-repeat="submenu in menuInfo.submenu | filter:{mainmenuid:menu.id,position:'1'}| orderBy: 'req'">
+            <a href="#/articleList/{{submenu.id}}">{{submenu.text}}</a>
+          </li>
+          <li class="divider"></li>
+          <li ng-repeat="submenu in menuInfo.submenu | filter:{mainmenuid:menu.id,position:'2'}| orderBy: 'req'">
+            <a href="#/articleList/{{submenu.id}}">{{submenu.text}}</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a target="_blank" href="https://github.com/imakawa/imakawa.github.io">GitHub</a></li>
+      <li><a href="#/about">About</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>

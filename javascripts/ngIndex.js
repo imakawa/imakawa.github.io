@@ -34,16 +34,23 @@ blogApp.config(['$routeProvider',
     blogCtrls.controller('homeCtrl', function($scope,$http,$location,$window) {
       //the ctrl for home page
       GetData.menuInfo($http,function(data){
-        $scope.testdata = data.mainmenu[0].id;
+        $scope.menuInfo = data;
       });
     });
     blogCtrls.controller('articleListCtrl', function($scope,$http,$location,$window,$routeParams) {
       //the ctrl for articleList page
       $scope.menuId = $routeParams.menuId;
+      GetData.menuInfo($http,function(data){
+        $scope.menuInfo = data;
+      });
     });
     blogCtrls.controller('articleCtrl', function($scope,$http,$location,$window) {
-
+      GetData.menuInfo($http,function(data){
+        $scope.menuInfo = data;
+      });
     });
     blogCtrls.controller('aboutCtrl', function($scope,$http,$location,$window) {
-
+      GetData.menuInfo($http,function(data){
+        $scope.menuInfo = data;
+      });
     });

@@ -1,23 +1,23 @@
 {
   "mainmenu":[
     {"id": "100","visible":"1","position": "left","req":"0","type":"dropdown","text":"JavaScript"},
-    {"id": "101","visible":"1","position": "left","req":"1","type":"dropdown","text":"DataBase"},
+    {"id": "101","visible":"1","position": "left","req":"1","type":"dropdown","text":"Database"},
     {"id": "102","visible":"1","position": "left","req":"2","type":"dropdown","text":"Language"},
     {"id": "103","visible":"1","position": "right","req":"0","type":"link","text":"GitHub"},
     {"id": "104","visible":"1","position": "right","req":"1","type":"link","text":"About"}
     ],
 
   "submenu":[
-    {"id": "1001","mainmenuid":"100","visible":"1","position": "0","req":"0","text":"angular"},
-    {"id": "1002","mainmenuid":"100","visible":"1","position": "0","req":"1","text":"backbone"},
-    {"id": "1003","mainmenuid":"100","visible":"1","position": "0","req":"2","text":"knockout"},
-    {"id": "1004","mainmenuid":"100","visible":"1","position": "1","req":"0","text":"nodejs"},
-    {"id": "1005","mainmenuid":"100","visible":"1","position": "2","req":"0","text":"marooo.js"},
+    {"id": "1001","mainmenuid":"100","visible":"1","position": "0","req":"0","text":"AngularJS"},
+    {"id": "1002","mainmenuid":"100","visible":"1","position": "0","req":"1","text":"Backbone.js"},
+    {"id": "1003","mainmenuid":"100","visible":"1","position": "0","req":"2","text":"KnockoutJS"},
+    {"id": "1004","mainmenuid":"100","visible":"1","position": "1","req":"0","text":"Node.js"},
+    {"id": "1005","mainmenuid":"100","visible":"1","position": "2","req":"0","text":"Marooon.js"},
     {"id": "1010","mainmenuid":"101","visible":"1","position": "0","req":"0","text":"MongoDB"},
-    {"id": "1011","mainmenuid":"101","visible":"1","position": "0","req":"1","text":"sqlite"},
-    {"id": "1012","mainmenuid":"101","visible":"1","position": "1","req":"0","text":"sqlserver"},
-    {"id": "1013","mainmenuid":"101","visible":"1","position": "1","req":"1","text":"mysql"},
-    {"id": "1014","mainmenuid":"101","visible":"1","position": "1","req":"2","text":"oracle"},
+    {"id": "1011","mainmenuid":"101","visible":"1","position": "0","req":"1","text":"SQLite"},
+    {"id": "1012","mainmenuid":"101","visible":"1","position": "1","req":"0","text":"Microsoft SQL Server"},
+    {"id": "1013","mainmenuid":"101","visible":"1","position": "1","req":"1","text":"MySQL"},
+    {"id": "1014","mainmenuid":"101","visible":"1","position": "1","req":"2","text":"Oracle Database"},
     {"id": "1020","mainmenuid":"102","visible":"1","position": "0","req":"0","text":"日本語"},
     {"id": "1021","mainmenuid":"102","visible":"1","position": "0","req":"1","text":"English"}
   ]
