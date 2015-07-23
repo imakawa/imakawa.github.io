@@ -1,4 +1,9 @@
 <div>
   <header></header>
-  <iframe src="post/はじめてAngularJs.htm" style="border:0" frameborder="0" height="100%" width="100%"></iframe>
+  <iframe id="article" src="post/はじめてAngularJs.htm" style="border:0" frameborder="0" height="100%" width="100%"></iframe>
+
+  <script>
+  var article = document.getElementById("article");
+  article.height = window.screen.availHeight;
+  </script>
 </div>
