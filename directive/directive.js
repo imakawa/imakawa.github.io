@@ -1,3 +1,4 @@
+//「blogApp」はngIndex.jsと一致する
 blogApp.directive('header',function(){
     return {
         restrict: 'E',

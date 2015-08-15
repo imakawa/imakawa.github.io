@@ -1,6 +1,11 @@
 <div>
   <header></header>
+  <ol class="breadcrumb">
+    <li><a href="index.html#/home">Home</a></li>
+    <li class="active">{{currentPath1}}</li>
+    <li class="active">{{currentPath2}}</li>
+  </ol>
   <div ng-repeat="article in articleInfo">
-    <a href="#/article/{{article.id}}">{{article.title}}</a>
+    <a href="#/article/{{menuId}}/{{article.id}}">{{article.title}}</a>
   </div>
 </div>
